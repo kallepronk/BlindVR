@@ -1485,6 +1485,12 @@ MonoBehaviour:
     - _mode: 0
       _feature: 2
       _state: 8
+    - _mode: 0
+      _feature: 6
+      _state: 18
+    - _mode: 0
+      _feature: 4
+      _state: 14
   _transformConfig:
     PositionOffset: {x: 0, y: 0, z: 0}
     RotationOffset: {x: 0, y: 0, z: 0}
