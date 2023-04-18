@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,10 +13,14 @@ public class PushPan : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.z >= treshhold && !clip1.isPlaying)
+        if (!clip1.isPlaying)
         {
-            Debug.Log("Crash");
-            onPanPushed.Invoke();
+            GetComponent<Grabbable>().enabled = true;
+            if (transform.position.z > treshhold)
+            {
+                Debug.Log("Crash");
+                onPanPushed.Invoke();
+            }
         }
     }
 }

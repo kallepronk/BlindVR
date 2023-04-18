@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
 
 public class PushedPanBehavior : MonoBehaviour
@@ -8,7 +9,8 @@ public class PushedPanBehavior : MonoBehaviour
 
     public void WhenCalled()
     {
-        Animator.SetBool("Base Layer", true);
+        Animator.SetBool("Pushed", true);
+        GetComponent<Grabbable>().enabled = false;
     }
 
 }

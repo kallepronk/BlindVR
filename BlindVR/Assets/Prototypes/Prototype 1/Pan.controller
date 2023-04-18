@@ -35,7 +35,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Base Layer
+    m_ConditionEvent: Pushed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5870148573603084015}
@@ -60,7 +60,7 @@ AnimatorController:
   m_Name: Pan
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Base Layer
+  - m_Name: Pushed
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
