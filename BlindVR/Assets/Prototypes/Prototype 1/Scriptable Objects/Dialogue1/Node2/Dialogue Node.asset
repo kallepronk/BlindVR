@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 2a22d96b4cb24bd98c0864d03ab5bf3f, type: 3}
   m_Name: Dialogue Node
-  m_EditorClassIdentifier: Assembly-CSharp::ChoiceDialogueNode
+  m_EditorClassIdentifier: 
   m_DialogueLine: {fileID: 11400000, guid: 5910b91cce0cd5847a96427611ebd33b, type: 2}
-  m_Choices: []
+  m_Choices:
+  - m_ChoicePreview: Left
+    m_ChoiceNode: {fileID: 11400000, guid: dba44d3911d35004f8ec633790928e58, type: 2}
+  - m_ChoicePreview: Right
+    m_ChoiceNode: {fileID: 11400000, guid: 900f274febe3b88418f56094286a8303, type: 2}

@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Scriptable Objects/Narration/Line")]
 public class NarrationLine : ScriptableObject
 {
-    [SerializeField] private AudioSource audioSource;
-    
+    public int allowActionSecondsEarlier = 0;
+    public AudioClip clip;
 }

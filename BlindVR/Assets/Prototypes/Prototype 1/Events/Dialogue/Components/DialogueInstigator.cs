@@ -7,6 +7,8 @@ public class DialogueInstigator : MonoBehaviour
 
     private DialogueSequencer m_DialogueSequencer;
 
+    [SerializeField] private Dialogue startupDialogue;
+
     private void Awake()
     {
         m_DialogueSequencer = new DialogueSequencer();
@@ -18,6 +20,11 @@ public class DialogueInstigator : MonoBehaviour
 
         m_DialogueChannel.OnDialogueRequested += m_DialogueSequencer.StartDialogue;
         m_DialogueChannel.OnDialogueNodeRequested += m_DialogueSequencer.StartDialogueNode;
+
+        if (startupDialogue != null)
+        {
+            OnDialogueStart(startupDialogue);
+        }
     }
 
     private void OnDestroy()
